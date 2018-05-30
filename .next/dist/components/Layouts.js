@@ -20,7 +20,7 @@ var _semanticUiReact = require('semantic-ui-react');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'C:\\Projects\\BlockChain\\kickstart\\components\\Layouts.js';
+var _jsxFileName = 'C:\\Projects\\Blockchain\\kickstarter\\kickstart\\components\\Layouts.js';
 
 exports.default = function (props) {
     return _react2.default.createElement(_semanticUiReact.Container, {
@@ -44,4 +44,4 @@ exports.default = function (props) {
         }
     }), props.children);
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXExheW91dHMuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJIZWFkZXIiLCJIZWFkIiwiQ29udGFpbmVyIiwicHJvcHMiLCJjaGlsZHJlbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsQUFBTzs7OztBQUNQLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPOzs7O0FBQ1AsQUFBUyxBQUVUOzs7Ozs7a0JBQWUsaUJBQVMsQUFDcEI7MkJBQ0ksQUFBQzs7c0JBQUQ7d0JBQUEsQUFDSTtBQURKO0FBQUEsS0FBQSxrQkFDSSxBQUFDOztzQkFBRDt3QkFBQSxBQUNJO0FBREo7QUFBQSwrQ0FDVSxLQUFOLEFBQVUsY0FBYSxNQUF2QixBQUE0QjtzQkFBNUI7d0JBRlIsQUFDSSxBQUNJLEFBRUo7QUFGSTt5QkFFSixBQUFDOztzQkFBRDt3QkFKSixBQUlJLEFBQ0M7QUFERDtBQUFBLGNBTFIsQUFDSSxBQUtXLEFBSWxCO0FBWEQiLCJmaWxlIjoiTGF5b3V0cy5qcyIsInNvdXJjZVJvb3QiOiJDOi9Qcm9qZWN0cy9CbG9ja0NoYWluL2tpY2tzdGFydCJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXExheW91dHMuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJIZWFkZXIiLCJIZWFkIiwiQ29udGFpbmVyIiwicHJvcHMiLCJjaGlsZHJlbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsQUFBTzs7OztBQUNQLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPOzs7O0FBQ1AsQUFBUyxBQUVUOzs7Ozs7a0JBQWUsaUJBQVMsQUFDcEI7MkJBQ0ksQUFBQzs7c0JBQUQ7d0JBQUEsQUFDSTtBQURKO0FBQUEsS0FBQSxrQkFDSSxBQUFDOztzQkFBRDt3QkFBQSxBQUNJO0FBREo7QUFBQSwrQ0FDVSxLQUFOLEFBQVUsY0FBYSxNQUF2QixBQUE0QjtzQkFBNUI7d0JBRlIsQUFDSSxBQUNJLEFBRUo7QUFGSTt5QkFFSixBQUFDOztzQkFBRDt3QkFKSixBQUlJLEFBQ0M7QUFERDtBQUFBLGNBTFIsQUFDSSxBQUtXLEFBSWxCO0FBWEQiLCJmaWxlIjoiTGF5b3V0cy5qcyIsInNvdXJjZVJvb3QiOiJDOi9Qcm9qZWN0cy9CbG9ja2NoYWluL2tpY2tzdGFydGVyL2tpY2tzdGFydCJ9
