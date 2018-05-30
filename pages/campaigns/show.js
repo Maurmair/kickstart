@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Layout from "../../components/Layouts";
 import Campaign from '../../ethereum/campaign';
-import { Card, Grid } from 'semantic-ui-react';
+import { Card, Grid, Button } from 'semantic-ui-react';
 import web3 from '../../ethereum/web3';
 import ContributeForm from '../../components/ContributeForm';
+import { Link } from '../../routes';
 
 class CampaignShow extends Component {
-  static async getInitialProps(props){
+  static async getInitialProps(props) {
     const campaign = Campaign(props.query.address);
     // console.log(campaign);
     const summary = await campaign.methods.getSummary().call();
@@ -26,12 +27,24 @@ class CampaignShow extends Component {
       <Layout>
         <h3>Campaign Show</h3>
         <Grid>
-          <Grid.Column width={10}>
-            {this.renderCards()}
-          </Grid.Column>
-          <Grid.Column width={6}>
-            <ContributeForm address={this.props.address}/>
-          </Grid.Column>
+          <Grid.Row>
+            <Grid.Column width={10}>
+              {this.renderCards()}
+
+            </Grid.Column>
+            <Grid.Column width={6}>
+              <ContributeForm address={this.props.address} />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <Link route={`/campaigns/${this.props.address}/requests`}>
+                <a>
+                  <Button primary>View Requests</Button>
+                </a>
+              </Link>
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
       </Layout>
     );
@@ -47,28 +60,28 @@ class CampaignShow extends Component {
     } = this.props;
 
     const items = [
-      { 
+      {
         header: manager,
         meta: 'Address of Manager',
         description: 'The manager created this campaign and can create requests to withdraw money',
-        style: { overflowWrap: 'break-word'}
+        style: { overflowWrap: 'break-word' }
       },
-      { 
+      {
         header: minimumContribution,
         meta: 'Minimum Contribution (Wei)',
         description: 'You must at least this much Wei to become an approver'
       },
-      { 
+      {
         header: requestCount,
         meta: 'Number of requests',
         description: 'A request tries to withdraw money from the contract. Requests must be approved by approvers.'
       },
-      { 
+      {
         header: approversCount,
         meta: 'Number of approvers',
         description: 'Number of people who already have donated to this campaign'
       },
-      { 
+      {
         header: web3.utils.fromWei(balance, 'ether'),
         meta: 'Campaign Balance (Ether)',
         description: 'The balance is how much money this campaign has left to spend'
